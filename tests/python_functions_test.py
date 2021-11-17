@@ -2,8 +2,6 @@ from src.python_functions_practice import *
 
 import unittest
 
-months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-
 class TestPythonFunctionPractice(unittest.TestCase):
 
   def test_return_10(self):
@@ -81,22 +79,23 @@ class TestPythonFunctionPractice(unittest.TestCase):
   #Further
 
   #Given the length of a side of a cube calculate the volume
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_volume_of_cube(self):
-    #add test code here
+    result = volume_of_cube(2)
+    self.assertEqual(8 , result)
     pass
 
   #Given a String, return the String reversed
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_reverse_string(self):
-    #add test code here
-    pass
+    reversed_string = test_reverse_string('word')
+    self.assertEqual('drow', reversed_string)
 
   #Given a value in farenheit, convert this into celsius.
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_fahrenheit_to_celsius(self):
-    #add test code here
-    pass
+    celsius = test_fahrenheit_to_celsius(0)
+    self.assertEqual(-17.77777777777778, celsius)
 
 
 if __name__ == '__main__':

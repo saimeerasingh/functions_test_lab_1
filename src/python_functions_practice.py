@@ -31,3 +31,12 @@ def number_to_full_month_name(num1):
 def number_to_short_month_name(num1):
     return (months[num1-1][:3])
 
+def volume_of_cube(num1):
+    return pow(num1,3)
+
+def test_reverse_string(string1):
+    return string1[::-1]
+
+def test_fahrenheit_to_celsius(farenheit):
+    celsius = (farenheit - 32) * (5.0/9.0)
+    return celsius
