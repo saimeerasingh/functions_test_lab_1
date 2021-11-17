@@ -19,3 +19,6 @@ def length_of_string(string):
 
 def join_string(string1,string2):
     return string1 + string2
+
+def add_string_as_number(string1,string2):
+    return int(string1) + int(string2) 
