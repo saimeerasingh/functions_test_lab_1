@@ -2,6 +2,8 @@ from src.python_functions_practice import *
 
 import unittest
 
+months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
 class TestPythonFunctionPractice(unittest.TestCase):
 
   def test_return_10(self):
@@ -46,12 +48,12 @@ class TestPythonFunctionPractice(unittest.TestCase):
       add_result = add_string_as_number( "1", "2" )
       self.assertEqual( 3, add_result )
 
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_number_to_full_name__month_1(self):
       result = number_to_full_month_name( 1 )
       self.assertEqual( "January", result )
 
-  @unittest.skip("delete this line to run the test")
+#   @unittest.skip("delete this line to run the test")
   def test_number_to_full_name__month_3(self):
       result = number_to_full_month_name( 3 )
       self.assertEqual( "March", result )
